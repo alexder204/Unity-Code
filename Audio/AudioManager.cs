@@ -11,7 +11,7 @@ namespace PlayerDialogue
         [SerializeField] AudioSource SFXSource;
 
         [Header("AudioClip")]
-        public AudioClip background;
+        public AudioClip audioClip;
 
         private void Awake()
         {
@@ -21,7 +21,7 @@ namespace PlayerDialogue
         // Start is called before the first frame update
         void Start()
         {
-            musicSource.clip = background;
+            musicSource.clip = audioClip;
             musicSource.Play();
         }
 
