@@ -23,7 +23,7 @@ public class HealthController : MonoBehaviour
     [SerializeField] private float maxHealCooldown = 3.0f;
     [SerializeField] private bool startCooldown = false;
 
-    [Header("Audio Name")]
+    [Header("Audio")]
     [SerializeField] private AudioClip hurtAudio = null;
     private AudioSource healthAudioSource;
 
