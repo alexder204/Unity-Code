@@ -7,7 +7,7 @@ public class AmmoDisplay : MonoBehaviour
 {
 
     public GameObject ammoTextUI;
-    public int pistolCount;
+    public int bulletCount;
 
     // Update is called once per frame
     void Update()
