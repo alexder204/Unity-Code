@@ -8,7 +8,7 @@ public class Climbing : MonoBehaviour
     public Transform orientation;
     public Rigidbody rb;
     public PlayerMovement pm;
-    public LayerMask whatIsWall;
+    public LayerMask wallMask;
 
     [Header("Climbing")]
     public float climbSpeed;
@@ -83,7 +83,7 @@ public class Climbing : MonoBehaviour
 
     private void WallCheck()
     {
-        wallFront = Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, detectionLength, whatIsWall);
+        wallFront = Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, detectionLength, wallMask);
         wallLookAngle = Vector3.Angle(orientation.forward, -frontWallHit.normal);
 
         bool newWall = frontWallHit.transform != lastWall || Mathf.Abs(Vector3.Angle(lastWallNormal, frontWallHit.normal)) > minWallNormalAngleChange;
