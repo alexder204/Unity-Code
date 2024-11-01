@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace KeySystem
 {
-    public class MyDoorController : MonoBehaviour
+    public class DoorController : MonoBehaviour
     {
         public Animator doorAnim;
 
