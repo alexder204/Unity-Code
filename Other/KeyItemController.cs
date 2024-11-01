@@ -11,7 +11,7 @@ namespace KeySystem
 
         public bool doorLocked = true;
 
-        [SerializeField] private KeyInventory _keyInventory = null;
+        [SerializeField] private KeyInventory keyInventory = null;
 
         private DoorController doorObject;
 
@@ -32,7 +32,7 @@ namespace KeySystem
             }
             else if (redKey)
             {
-                _keyInventory.hasRedKey = true;
+                keyInventory.hasRedKey = true;
                 doorLocked = false;
                 gameObject.SetActive(false);
             }
