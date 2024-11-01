@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HeadBobController : MonoBehaviour
 {
-    [SerializeField] private bool _enable = true;
+    [SerializeField] private bool enable = true;
 
-    [SerializeField, Range(0, 0.1f)] private float _amplitude = 0.015f;
-    [SerializeField, Range(0, 30)] private float _frequency = 10.0f;
+    [SerializeField, Range(0, 0.1f)] private float amplitude = 0.015f;
+    [SerializeField, Range(0, 30)] private float frequency = 10.0f;
 
-    [SerializeField] private Transform _camera = null;
-    [SerializeField] private Transform _cameraHolder = null;
+    [SerializeField] private Transform camera = null;
+    [SerializeField] private Transform cameraHolder = null;
 
     private float _toggleSpeed = 3.0f;
     private Vector3 _startPos;
@@ -19,8 +19,8 @@ public class HeadBobController : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        _controller = GetComponent<PlayerMovement>();
-        _startPos = _camera.localPosition;
+        controller = GetComponent<PlayerMovement>();
+        startPos = camera.localPosition;
     }
 
     // Update is called once per frame
