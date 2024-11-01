@@ -11,7 +11,7 @@ public class HealthController : MonoBehaviour
     [SerializeField] private int regenRate = 1;
     private bool canRegen = false;
 
-    [Header("Add the Splatter image here")]
+    [Header("Splatter Image")]
     [SerializeField] private Image redSplatterImage = null;
 
     [Header("Hurt Image Flash")]
