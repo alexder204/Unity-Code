@@ -13,8 +13,8 @@ public class HeadBobController : MonoBehaviour
     [SerializeField] private Transform cameraHolder = null;
 
     private float _toggleSpeed = 3.0f;
-    private Vector3 _startPos;
-    private PlayerMovement _controller;
+    private Vector3 startPos;
+    private PlayerMovement controller;
 
     // Start is called before the first frame update
     private void Awake()
