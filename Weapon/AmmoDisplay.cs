@@ -12,6 +12,6 @@ public class AmmoDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ammoTextUI.GetComponent<Text>().text = "AMMO: " + pistolCount;
+        ammoTextUI.GetComponent<Text>().text = "AMMO: " + bulletCount;
     }
 }
