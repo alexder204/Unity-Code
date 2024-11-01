@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DayNightCycle : MonoBehaviour
 {
     public float time;
-    public TimeSpan currenttime;
+    public TimeSpan currentTime;
     public Transform SunTransform;
     public Light Sun;
     public Text timetext;
@@ -33,8 +33,8 @@ public class DayNightCycle : MonoBehaviour
             time = 0;
         }
 
-        currenttime = TimeSpan.FromSeconds(time);
-        string[] temptime = currenttime.ToString().Split(":"[0]);
+        currentTime = TimeSpan.FromSeconds(time);
+        string[] temptime = currentTime.ToString().Split(":"[0]);
         timetext.text = temptime[0] + ":" + temptime[1];
 
         SunTransform.rotation = Quaternion.Euler(new Vector3((time - 21600) / 86400 * 360, 0, 0));
