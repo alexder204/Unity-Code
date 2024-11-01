@@ -56,11 +56,11 @@ public class Swinging : MonoBehaviour
 
         RaycastHit sphereCastHit;
         Physics.SphereCast(cam.position, predictionSphereCastRadius, cam.forward,
-                            out sphereCastHit, maxSwingDistance, whatIsGrappleable);
+                            out sphereCastHit, maxSwingDistance, grappleableMask);
 
         RaycastHit raycastHit;
         Physics.Raycast(cam.position, cam.forward,
-                            out raycastHit, maxSwingDistance, whatIsGrappleable);
+                            out raycastHit, maxSwingDistance, grappleableMask);
 
         Vector3 realHitPoint;
 
