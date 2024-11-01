@@ -19,7 +19,7 @@ namespace KeySystem
         {
             if (redDoor)
             {
-                doorObject = GetComponent<MyDoorController>();
+                doorObject = GetComponent<DoorController>();
             }
         }
 
