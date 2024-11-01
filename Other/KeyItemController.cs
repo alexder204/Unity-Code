@@ -13,7 +13,7 @@ namespace KeySystem
 
         [SerializeField] private KeyInventory keyInventory = null;
 
-        [SerializeField] private DoorController doorObject;
+        private DoorController doorObject;
 
         private void Start()
         {
